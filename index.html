@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastrar Conta</title>
+</head>
+<body>
+    <div class="signIn">
+        <h3>Cadastrar conta</h3>
+        <form class="formulario">
+            <div class="agroup col-sm-2">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingName" placeholder="Name" autocomplete="off">
+                    <label for="floatingName">Usuário</label>
+                    <div class="erro-message"></div>
+                </div>
+        
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingEmail" placeholder="Email" autocomplete="off">
+                    <label for="floatingEmail">Email</label>
+                    <div class="error"></div>
+                </div>
+        
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" autocomplete="off">
+                    <label for="floatingPassword">Senha</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingConfirm_Password" placeholder="Password" autocomplete="off">
+                    <label for="floatingConfirm_Password">Confirme a senha</label>
+                    <div class="error-message-two"></div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-primary btn-lg">Enviar</button>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

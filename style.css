@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2B3035;
+    width: 100vw;
+    height: 100vh;
+}
+
+h3{
+    color: aliceblue;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.signIn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(23, 23, 23, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.form-floating label{
+    color: aliceblue;
+}
+
+
+
+.form-floating input{
+    width: 380px;
+    background-color: #2B3035;
+    color: white;
+    transition: 0.3s;
+}
+
+.form-floating input:focus{
+    border: 1px solid pink;
+    box-shadow: 0px 0px 10px 2px pink;
+    background-color:#2B3035;
+    color: aliceblue;
+}
+
+.btn{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+
+.form-floating input.active{
+    border: 1px solid red;
+    box-shadow: 0px 0px 10px 2px red;
+}
+
+.error-message, .error-message-two{
+    color: red;
+    width: 380px;
+    margin-top: 7px;
+    margin-bottom: -9px;
+}
+
+@media screen and (max-width: 480px) {
+    .signIn {
+        width: 90%; 
+    }
+
+    h3,
+    .form-floating label,
+    .form-floating input,
+    .btn,
+    .error-message,
+    .error-message-two {
+        font-size: 14px;
+    }
+
+    h3 {
+        letter-spacing: 2px;
+    }
+
+    .form-floating input,
+    .form-floating input:focus {
+        width: 100%;
+    }
+}
